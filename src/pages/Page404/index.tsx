@@ -1,13 +1,12 @@
 import { Container } from "./style";
-import page404  from ".../.../assents/page404.png"
+import page404 from "../../assets/page404.png";
 import { useNavigate } from "react-router-dom";
 export function Page404() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Container>
-      <img src={page404}/>
-      <button onClick={()=>
-      navigate("/")}>page 404</button>
+      <img src={page404} />
+      <button onClick={() => navigate("/")}>page 404</button>
     </Container>
   );
 }
